@@ -121,33 +121,28 @@ var css = {
 			"oBoxSizing": "border-box", padding: "0 4px",
 			height: "40px", fontSize: "1em", "borderRadius": "0"
 		},
-		".scrollback-nick, .scrollback-text-wrap .scrollback-nick-guest": {
-			"position": "absolute", "top": "0",
-			"margin": "0"
+		".scrollback-nick, .scrollback-text-wrap, .scrollback-nick-guest": {
+			"position": "absolute", "top": "0", "margin": "0"
 		},
 		".scrollback-text:focus": {
 			outline: "none"
 		},
-		".scrollback-nick": {
-			"height":"40px", "padding-top":"10px",
-			
-			"padding-left":"20px",
-			"width": "80px",
-			borderTop: "1px solid #ccc","background": "#ccc",
-			backgroundImage: "url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEDSURBVFiF7ZY9bsJAEEbfoCjiGByAQ+QYlIiWS7jkCCl9hXQ5Rgq63CQFXwp+hEws2/sFsKx50jSenZ0neT3ekMSYmT1boIsUdElBlxR0SUGXF3eDiJgD78CikfoGtpJ+rAaSigOYA5+AWuIDeLV63FHuXyQdwabcDng7xa4p+QzBa4Hqj3x1vaa0T5RetyLiUigpStd0Mb0xExFLYNl4tupRtwL2kvaDGhacvYruL7ctbs5qV4z+FaegSwq6TFLwi+PIGIpOtQOryv7DG+BA//l3ADaPviz0lSyWswR7Slpy1m3mTESsgXVLupZUW/u7gvdmkmPmoaSgSwq6pKDL6AV/AZ98G/eM8FYqAAAAAElFTkSuQmCC')",
-			"backgroundRepeat":"no-repeat",
+		".scrollback-nick, .scrollback-nick-guest": {
+			lineHeight: "40px", cursor: "pointer",
+			paddingLeft: "40px",
+			width: "120px",
+			borderTop: "1px solid #ccc", "background": "#ccc",
+			"backgroundRepeat": "no-repeat",
 			"backgroundPosition": "left center"
 		},
-		".scrollback-nick-guest": {
-			borderTop: "1px solid #ccc", "background": "#ccc",
-			backgroundImage: "url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAG9SURBVFiF7Za7SgNBFIa/EyOCIFGsrAxiIZhGCxsLU4jkEWyF2GuXRghY+QYWFoKNzyAodl4SsBMbYa20EdFCbeRY7ATCJHF3nM0qYX84hJyZ+efLnMxFVJX/rNxfA0QpA/RVBuirDNBXGaCv8kkbikgFqFlpBXZV9czZUFUTC6ACfBogO96BVWfPlOBa8QGspQ4IlC24wACXzWdgQa6kDVi34IpWe9GCrMf17scuPlTVoD1hvh/+xmzwjxkRWQdKbamSydnq6KOqx5H+vi9qEfm1gapKVJ/BKrGITBGW6gu4VdUn4AZY6ANbOGfcEotIETgHpk3qgfCcewM2CauRA8REzvTd6OUZp8QuZ11A580QALPACDBMWJGh1g834/a6jNNw6uh5XVbQdTMosGSgL3osTuQKJvGa2QfuCVdxB3g1QGPAHbDs5e5Q4hqdZaqZtlHC/90iMNM2Zg547DJOgavE72JgGzgFToAtk8sDl8CRAZo3K1n9Ae4aKKT5WCgAjR4wdjSA8djeSQAayHGgGQHXdIFz2sVxJCITwAEw2aX5Gaiq6ouTZ5KA/dC/v4szQF9lgL7KAH2VAfrqG5kCZk+lsX5LAAAAAElFTkSuQmCC')",
-			"backgroundRepeat":"no-repeat",
-			"backgroundPosition": "left center",
-			"height":"40px", "padding-top":"10px",
-			"padding-left":"20px",
-			"width": "80px"
+		
+		".scrollback-nick": {
+			backgroundImage: "url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEDSURBVFiF7ZY9bsJAEEbfoCjiGByAQ+QYlIiWS7jkCCl9hXQ5Rgq63CQFXwp+hEws2/sFsKx50jSenZ0neT3ekMSYmT1boIsUdElBlxR0SUGXF3eDiJgD78CikfoGtpJ+rAaSigOYA5+AWuIDeLV63FHuXyQdwabcDng7xa4p+QzBa4Hqj3x1vaa0T5RetyLiUigpStd0Mb0xExFLYNl4tupRtwL2kvaDGhacvYruL7ctbs5qV4z+FaegSwq6TFLwi+PIGIpOtQOryv7DG+BA//l3ADaPviz0lSyWswR7Slpy1m3mTESsgXVLupZUW/u7gvdmkmPmoaSgSwq6pKDL6AV/AZ98G/eM8FYqAAAAAElFTkSuQmCC')",
 		},
-		'.scrollback-text-wrap': { "right": "0px", "left": "80px" },
+		".scrollback-nick-guest": {
+			backgroundImage: "url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAG9SURBVFiF7Za7SgNBFIa/EyOCIFGsrAxiIZhGCxsLU4jkEWyF2GuXRghY+QYWFoKNzyAodl4SsBMbYa20EdFCbeRY7ATCJHF3nM0qYX84hJyZ+efLnMxFVJX/rNxfA0QpA/RVBuirDNBXGaCv8kkbikgFqFlpBXZV9czZUFUTC6ACfBogO96BVWfPlOBa8QGspQ4IlC24wACXzWdgQa6kDVi34IpWe9GCrMf17scuPlTVoD1hvh/+xmzwjxkRWQdKbamSydnq6KOqx5H+vi9qEfm1gapKVJ/BKrGITBGW6gu4VdUn4AZY6ANbOGfcEotIETgHpk3qgfCcewM2CauRA8REzvTd6OUZp8QuZ11A580QALPACDBMWJGh1g834/a6jNNw6uh5XVbQdTMosGSgL3osTuQKJvGa2QfuCVdxB3g1QGPAHbDs5e5Q4hqdZaqZtlHC/90iMNM2Zg547DJOgavE72JgGzgFToAtk8sDl8CRAZo3K1n9Ae4aKKT5WCgAjR4wdjSA8djeSQAayHGgGQHXdIFz2sVxJCITwAEw2aX5Gaiq6ouTZ5KA/dC/v4szQF9lgL7KAH2VAfrqG5kCZk+lsX5LAAAAAElFTkSuQmCC')",
+		},
+		'.scrollback-text-wrap': { "right": "0px", "left": "120px" },
 		".scrollback-text": { width: "100%" },
 	".scrollback-icon-popup": {
 		position: "fixed", background: "#f70"
